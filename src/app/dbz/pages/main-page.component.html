@@ -1,0 +1,9 @@
+<h2>DBZ Personajes!</h2>
+<div class="row">
+    <div class="col">
+        <app-dbz-list (onDelete)="deleteCharacter($event)" [charactersList]="charactersList"></app-dbz-list>
+    </div>
+    <div class="col">
+        <app-dbz-form (onNewCharacter)="createCharacter($event)"></app-dbz-form>
+    </div>
+</div>
